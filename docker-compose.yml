@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  wall:
+    build: ./wall/
+    ports:
+    - "5001:80"
+  dashboard:
+    build: ./dashboard/
+    ports:
+    - "5002:80"
+
+  twitter:
+    build: ./twitter/
+    ports:
+    - "5003:80"
+
+  gmail:
+    build: ./gmail/
+    ports:
+    - "5004:80"
